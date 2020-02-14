@@ -75,6 +75,32 @@
                                 </div>
                                 <div class="mdui-divider mdui-m-t-2"></div>
    
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '5366c3fd44059e412425',
+    clientSecret: 'addab046e261e37185add055b227324881bc2f5b',
+    repo: 'blogTalk',
+    owner: 'huzhizhao',
+    admin: ['huzhizhao'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
  <script src="https://huzhizhao.github.io/media/scripts/Valine.min.js"></script>
  <div class="comment"></div>
 
